@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+header {
+    display: flex;
+    background: rgba(58, 250, 10, 0.527);
+    height: 10%;
+    margin: auto;
+    align-items: center;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: rgba(88, 255, 152, 0.541);
+}
+
+p {
+    font-size: 22px;
+}
+
+footer {
+    display: flex;
+    background: rgba(58, 250, 10, 0.527);
+    height: 90%;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.photo-shape {
+    border-radius: 50%;
+}
+
+.photo-size {
+    width: 80px;
+    height: 80px;
+}
+
+.link-size {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo-container,
+.nav-links {
+    display: flex;
+}
+
+.logo-container {
+    background: rgba(43, 161, 14, 0.575);
+    flex: 0.5;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 1000;
+    margin: 5px;
+}
+
+nav {
+    flex: 1;
+    height: 20%;
+    text-align: center;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.presentation {
+    margin: 5%;
+}
+
+.introduction {
+    display: flex;
+}
